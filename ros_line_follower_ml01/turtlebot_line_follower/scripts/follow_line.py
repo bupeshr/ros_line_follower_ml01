@@ -31,7 +31,7 @@ class Color_line_follower:
         hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)                    #converting the RGB image to hsv image for color detection
         mask =cv2.inRange(hsv,self.lower_color, self.upper_color)       #masking the color 
         kernel = np.ones((5,5),np.uint8)
-        mask = cv2.erode(mask,kernel,iterations=3)                      
+        mask = cv2.erode(mask,kernel,iterations=2)                      
         m= cv2.moments(mask)                                            
 
         if m['m00']>0:
@@ -44,18 +44,18 @@ class Color_line_follower:
             cv2.circle(image, (cx,cy),3,(255,0,255),2) 
 
             #error calculation
-            self.error = cx - (image.shape[1]/2)
+            error = cx - image.shape[1]/2
             # print(self.error)
 
             # velocity values when line is detected
             self.twist.linear.x = 0.5
-            self.twist.angular.z= -(self.error/100)
+            self.twist.angular.z= -(error/100)
             self.cmd_pub.publish(self.twist)
         
         # print("camera")
         cv2.imshow("Output", image)
         cv2.imshow("masked", mask)
-        cv2.waitKey(0)
+        cv2.waitKey(2)
 
 
 rospy.init_node("rethens_ranger", anonymous= True)
