@@ -1,0 +1,103 @@
+<?xml version='1.0'?>
+<sdf version ='1.5'>
+ <model name ='line'>
+  <static>true</static>
+  <link name='first'>
+   <collision name="collision_first">
+    <pose>0 0 0 0 0 0.2</pose>
+    <geometry>
+     <box>
+      <size>0.1 1.5 0</size>
+     </box>
+    </geometry>
+   </collision>
+   <collision name="collision_second">
+    <pose>-0.56 1.3 0 0 0 0.6</pose>
+    <geometry><box><size>0.1 1.5 0</size></box></geometry>
+   </collision>
+   <collision name="collision_third">
+    <pose>-1.05 2.25 0 0 0 0.2</pose>
+    <geometry><box><size>0.1 0.75 0</size></box></geometry>
+   </collision>
+   <collision name="collision_forth">
+    <pose>-1.52 2.86 0 0 0 1</pose>
+    <geometry><box><size>0.1 1 0</size></box></geometry>
+   </collision>
+   <collision name="collision_fivth">
+    <pose>-2.3 2.9 0 0 0 2</pose>
+    <geometry><box><size>0.1 1 0</size></box></geometry>
+   </collision>
+   <collision name="collision_sixth">
+    <pose>-2.8 2 0 0 0 3</pose>
+    <geometry><box><size>0.1 1.5 0</size></box></geometry>
+   </collision>
+   <collision name="collision_seventh">
+    <pose>-3.18 0.9 0 0 0 2.5</pose>
+    <geometry><box><size>0.1 1 0</size></box></geometry>
+   </collision>
+   <collision name="collision_eigth">
+    <pose>-3.2 -0.15 0 0 0 3.5</pose>
+    <geometry><box><size>0.1 1.5 0</size></box></geometry>
+   </collision>
+   <collision name="collision_nine">
+    <pose>-2.15 -1.5 0 0 0 4</pose>
+    <geometry><box><size>0.1 2.2 0</size></box></geometry>
+   </collision>
+   <collision name="collision_ten">
+    <pose>-0.6 -1.4 0 0 0 8.6</pose>
+    <geometry><box><size>0.15 2.2 0</size></box></geometry>
+   </collision>
+   <visual name="visual_first">
+    <pose>0 0 0 0 0 0.2</pose>
+    <geometry><box><size>0.1 1.5 0</size></box></geometry>
+    <material><script><name>Gazebo/YellowGlow</name></script></material>
+   </visual>
+   <visual name="visual_second">
+    <pose>-0.56 1.3 0 0 0 0.6</pose>
+    <geometry><box><size>0.1 1.5 0</size></box></geometry>
+    <material><script><name>Gazebo/YellowGlow</name></script></material>
+   </visual>
+   <visual name="visual_third">
+    <pose>-1.05 2.25 0 0 0 0.2</pose>
+    <geometry><box><size>0.1 0.75 0</size></box></geometry>
+    <material><script><name>Gazebo/YellowGlow</name></script></material>
+   </visual>
+   <visual name="visual_forth">
+    <pose>-1.52 2.86 0 0 0 1</pose>
+    <geometry><box><size>0.1 1 0</size></box></geometry>
+    <material><script><name>Gazebo/YellowGlow</name></script></material>
+   </visual>
+   <visual name="visual_fivth">
+    <pose>-2.3 2.9 0 0 0 2</pose>
+    <geometry><box><size>0.1 1 0</size></box></geometry>
+    <material><script><name>Gazebo/YellowGlow</name></script></material>
+   </visual>
+   <visual name="visual_sixth">
+    <pose>-2.8 2.0 0 0 0 3</pose>
+    <geometry><box><size>0.1 1.5 0</size></box></geometry>
+    <material><script><name>Gazebo/YellowGlow</name></script></material>
+   </visual>
+   <visual name="visual_seventh">
+    <pose>-3.18 0.9 0 0 0 2.5</pose>
+    <geometry><box><size>0.1 1 0</size></box></geometry>
+    <material><script><name>Gazebo/YellowGlow</name></script></material>
+   </visual>
+   <visual name="visual_eigth">
+    <pose>-3.2 -0.15 0 0 0 3.5</pose>
+    <geometry><box><size>0.1 1.5 0</size></box></geometry>
+    <material><script><name>Gazebo/YellowGlow</name></script></material>
+   </visual>
+   <visual name="visual_nine">
+    <pose>-2.15 -1.5 0 0 0 4</pose>
+    <geometry><box><size>0.1 2.2 0</size></box></geometry>
+    <material><script><name>Gazebo/YellowGlow</name></script></material>
+   </visual>
+   <visual name="visual_ten">
+    <pose>-0.6 -1.4 0 0 0 8.6</pose>
+    <geometry><box><size>0.15 2.2 0</size></box></geometry>
+    <material><script><name>Gazebo/YellowGlow</name></script></material>
+   </visual>
+  </link>
+ </model>
+</sdf>
+

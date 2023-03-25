@@ -1,0 +1,14 @@
+material black_rectMat/Diffuse
+{
+    receive_shadows off
+    technique
+    {
+        pass
+        {
+            texture_unit
+            {
+                texture track1.png
+            }
+        }
+    }
+}
